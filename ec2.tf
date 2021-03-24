@@ -5,6 +5,7 @@ data "aws_subnet_ids" "My_subnets" {
 
 data "aws_ami" "my_ami" {
       most_recent      = true
+      owenrs = ["356659844107"]
 }
 
 
