@@ -1,5 +1,5 @@
 output "vpc_name" {
-      value = ["${aws_vpc.default.tags.name}"]
+      value = ["${aws_vpc.default.tags.Name}"]
 }
 
 output "vpc_id" {

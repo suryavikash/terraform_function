@@ -28,7 +28,7 @@ variable "blocks" {
   default = ["10.1.0.0/24", "10.1.1.0/24", "10.1.2.0/24"]
 }
 variable "environment" { default = "dev" }
-variable "instance_type" {
+variable "instance_size" {
   type = "map"
   default = {
     dev = "t2.nano"
