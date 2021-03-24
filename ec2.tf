@@ -3,6 +3,12 @@ data "aws_subnet_ids" "My_subnets" {
 }
 
 
+data "aws_ami" "my_ami" {
+      most_recent      = true
+}
+
+
+
 resource "aws_instance" "servers" {
 #    count = "${length(data.aws_subnet_ids.My_subnets.ids)}"
      count = 3
