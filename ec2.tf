@@ -12,7 +12,7 @@ resource "aws_instance" "servers" {
     #availability_zone = "${element(var.azs, count.index)}"
     instance_type = "${lookup(var.instance_size, var.environment)}"
     key_name = "${var.key_name}"
-    subnet_id = "${element(aws_subnet.subnets.*.id,count.index)}", count.index+2)}"
+    subnet_id = "${element(aws_subnet.subnets.*.id,count.index)}"
     vpc_security_group_ids = ["${aws_security_group.allow_all.id}"]
     associate_public_ip_address = true
     user_data = <<-EOF
