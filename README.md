@@ -1,5 +1,5 @@
 
-# terraform_function
+# terraform_function integrating with packer
 
 
 
