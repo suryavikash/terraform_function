@@ -12,7 +12,7 @@ data "aws_ami" "my_ami" {
 resource "aws_instance" "servers" {
 #    count = "${length(data.aws_subnet_ids.My_subnets.ids)}"
      count = 3
-    ami = ${var.imagename}
+    ami = "${var.imagename}"
     #availability_zone = "${element(var.azs, count.index)}"
     instance_type = "${lookup(var.instance_size, var.environment)}"
     key_name = "${var.key_name}"
