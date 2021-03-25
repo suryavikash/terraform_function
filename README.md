@@ -1,5 +1,5 @@
 
-# terraform integrating with packer_jenkins
+# terraform integrating with packer_jenkins_sample
 
 
 ========================================
